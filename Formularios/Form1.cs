@@ -35,7 +35,7 @@ namespace Formularios
             }
             catch (Exception ex)//cabptura el error e imprime en resultado valor no valido
             {
-                result.Text = "Valor invalido";
+                MessageBox.Show("Datos incorectos","Advertencia",MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
@@ -91,6 +91,12 @@ namespace Formularios
         private void checkBox1_CheckedChanged_3(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Persona1 persona1 = new Persona1();
+            persona1.ShowDialog();
         }
     }
 }
